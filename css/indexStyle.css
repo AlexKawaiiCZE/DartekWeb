@@ -73,8 +73,8 @@ article p {
 
 article img {
     margin: 0 10em;
-    height: 30em;
-    width: auto;
+    max-height: 40em;
+    max-width: 100%;
     border-radius: 15px;
 }
 
