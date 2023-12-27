@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Knihovna univerzálních stylů-->
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <!--Knihovna specifických stránkových stylů-->
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/pujcovnaStyle.css">
+    <!--Importování google fontů-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Ikona webové stránky-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images\favicon.png"> 
+    <title>Půjčovna</title>
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <img src="images\icon.png">
+            <div class="nav_prvky">
+              <a href="index.html">Úvod</a>
+              <a href="servis.html">Servis</a>
+              <a href="pujcovna.html" class="active">Půjčovna</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="parallax">
+        <header>
+            <h2>Půjčovna Dartek</h2>
+        </header>
+    </div>
+
+    <section>
+        <article>
+            <p class="upozorneni"><strong>Půjčujeme zahradní techniku Honda, Vari, Stihl</strong></p><br>
+            
+            <table>
+                <tr>
+                  <th></th>
+                  <th>SAZBA/DEN</th>
+                  <th>VRATNÁ ZÁLOHA</th>
+                </tr>
+                <!-- Položka 1 -->
+                <tr>
+                  <td><strong>KULTIVÁTOR</strong> - Honda (motorový čtyřtaktní) 2 nástavce (vyčesávání trávníků -drátky, provzdušňování trávníků - nože)</td>
+                  <td>800,- Kč<br>(1.400,- Kč víkend)</td>
+                  <td>5.000,- Kč</td>
+                </tr>
+
+                <!-- Položka 2 -->
+                <tr>
+                  <td><strong>BUBNOVÁ SEKAČKA</strong> - Vari   (sečení vysoké trávy)</td>
+                  <td>800,- Kč<br>(1.400,- Kč víkend)</td>
+                  <td>5.000,- Kč</td>
+                </tr>
+
+                <!-- Položka 3 -->
+                <tr>
+                  <td><strong>MOTOROVÁ SEKAČKA</strong> - Honda  (sečení a mulčování udržovaných trávníků)</td>
+                  <td>600,- Kč<br>(900,- Kč víkend)</td>
+                  <td>5.000,- Kč</td>
+                </tr>
+
+                <!-- Položka 4 -->
+                <tr>
+                  <td><strong>KŘOVINOŘEZ</strong> - Honda (motorový čtyřtaktní) 2 nástavce: strunová hlava, žací kotouč</td>
+                  <td>600,- Kč<br>(900,- Kč víkend)</td>
+                  <td>5.000,- Kč</td>
+                </tr>
+
+                <!-- Položka 5 -->
+                <tr>
+                  <td><strong>DRTIČ VĚTVÍ</strong> - Shark (elektrický) drtí větve až do průměru 4,5 cm</td>
+                  <td>400,- Kč<br>(600,- Kč víkend)</td>
+                  <td>2.000,- Kč</td>
+                </tr>
+
+                <!-- Položka 6 -->
+                <tr>
+                  <td><strong>MOTOROVÁ PILA</strong> - Stihl MS 230</td>
+                  <td>500,- Kč<br>(900,- Kč víkend)</td>
+                  <td>4.000,- Kč</td>
+                </tr>
+              </table>
+
+              <ul>
+                <li>Výše uvedené ceny platí pro 1 den (24 hodin)</li>
+                <li>Ceny jsou uvedené bez 21% DPH</li>  
+                <li>Půjčovné na  méně než 24 hodin nebývá zohledněno, tj. je účtováno za normální denní sazbu. Ve výjimečných případech lze sjednat na místě.</li>
+                <li>V případě potřeby půjčení stroje na delší dobu (dovolená apod.) lze sjednat zvýhodněnou individuální cenu.</li>
+                <li><strong>Platí ceny, které jsou uvedeny na prodejně, tyto ceny jsou pouze orientační a mohou se lišit</strong></li>
+              </ul>
+        </article>
+    </section>
+
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h3>Prodejna</h3>
+                    <p>Beroun, Plzeňská 228</p><br>
+                    <h4>Otevírací doba:</h4>
+                    <p><strong>po - pá</strong>   8:00 - 17:00   (polední přestávka 12:00 - 12:30)<br>
+                    <strong>so</strong>        zavřeno (otevřeno jen po předchozí telefonické domluvě) 
+                    </p>  
+                </td>
+
+                <td>
+                    <h3>Kontakty</h3>
+                    <p><Strong>Darina Nováková</Strong><br>
+                    777 706 366<br>
+                    novakova@dartek.cz</p>
+
+                    <p><strong>Zbyněk Vítek</strong><br>
+                    602 876 942<br>
+                    vitek@dartek.cz</p>
+                </td>
+            </tr>
+        </table>
+        <p class="autor">Stránku vytvořil:<a href="unknown.html"> Marek Šollar</a></p> 
+    </footer>
+</body>
+</html>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+</script>

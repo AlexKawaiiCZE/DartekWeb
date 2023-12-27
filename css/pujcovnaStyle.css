@@ -1,0 +1,41 @@
+/* COLORS */
+/* Záklaní nastavení barevného schématu stránky */
+:root { 
+    --primary: #ec1b30;
+    --white: #f5f5f5; 
+    --gray: #ebebeb;
+    --black: #0e0e0e; 
+    --transparentblack: rgba(0, 0, 0, 0.5);
+}
+
+.parallax {
+    background-image: url(../images/parallax.png);
+}
+
+section table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 3em;
+}
+  
+section tr th{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 1.5rem;
+}
+  
+section tr td {
+    font-size: 1.2rem;
+}
+
+section td, th {
+    border: 1.5px solid var(--black);
+    text-align: left;
+    padding: 8px;
+}
+
+section ul {
+    margin-bottom: 0;
+}

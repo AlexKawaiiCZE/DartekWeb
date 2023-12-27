@@ -1,0 +1,192 @@
+/* COLORS */
+/* Záklaní nastavení barevného schématu stránky */
+:root { 
+    --primary: #ec1b30;
+    --white: #f5f5f5; 
+    --gray: #ebebeb;
+    --black: #0e0e0e; 
+    --transparentblack: rgba(0, 0, 0, 0.5);
+}
+
+/* BODY */
+/* Záklaní nastavení celé stránky */
+body { 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+/* Navigační lišta */
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    max-width: 100%;
+}
+
+nav img {
+    display: flex;
+    align-self: center;
+    height: 3.6em;
+    width: auto;
+    padding: 0.3em 0 0.3em 0.8em;
+}
+
+.nav_prvky {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_prvky a {
+    color: var(--primary);
+    text-decoration: none;
+    padding: 1em 1.5em 1em 1.5em;
+    font-size: 1.25rem;
+}
+
+.nav_prvky a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.nav_prvky a:hover {
+    color: var(--black);
+}
+
+@media screen and (min-width: 501px) {
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--white);
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .nav_prvky {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_prvky a {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+/* FOOTER */
+/* Nastavení barev v footru */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Nastavení sloupců v footru */
+footer table {
+    text-align: center;
+    width: 100%;
+    height: 220px;    
+}
+
+footer td{
+    width: 50%
+}
+
+footer h3{
+    margin-top: 16px;
+    font-size: 22px;
+}
+
+footer h4{
+    margin: 0px;
+    font-size: 18px;
+}
+
+.autor{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--primary);
+    margin: 0; 
+    padding-top: 1%;
+    padding-bottom: 2%; 
+}
+
+.autor a{
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* HLAVNÍ STRANA */
+
+/* TITULNÍ OBRÁZEK | Hlavní Strana */
+/* Nastavení předváděcího obrázku */
+.parallax {
+    /*background-image: url(../images/parallax.png);*/
+    min-height: 100px;
+    min-width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 10%;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 50px;
+    background-color: var(--transparentblack); /* NEMĚNIT! Transparentní černá */
+}
+
+.button {
+    font-size: 2rem;
+}
+
+.button a {
+    background-color: var(--primary);
+    padding: 0.5em 0.8em;
+    border-radius: 15px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section ul {
+    margin-bottom: 3em;
+}
+
+section li {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Knihovna univerzálních stylů-->
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <!--Knihovna specifických stránkových stylů-->
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <!--Importování google fontů-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Ikona webové stránky-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images\favicon.png"> 
+    <title>Dartek Beroun</title>
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <img src="images\icon.png">
+            <div class="nav_prvky">
+              <a class="active" href="index.html">Úvod</a>
+              <a href="servis.html">Servis</a>
+              <a href="pujcovna.html">Půjčovna</a>
+              <a href="katalog.html">Katalog</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="parallax">
+        <header>
+            <h2>Připravte se s námi na léto</h2>
+            <div class="button">
+                <a href="">Podrobnosti</a>
+            </div>
+        </header>
+    </div>
+
+    <section>
+        <article>
+            <h2>Změna otevírací doby</h2>
+            <p><strong>27.12.23 - 1.1.24</strong> ZAVŘENO DOVOLENÁ</p>
+            <p><strong>PO - PÁ</strong> 8.00 - 17.00  (12.00-12.30 polední přestávka)</p>
+        </article>
+        <article>
+            <h2>Nový produkt v náší půjčovně</h2>
+            <p>Kromě našich stávajících strojů, půjčujeme i bubnovou sekačnu na vysokou trávu</p>
+            <div class="obrazek"><img src="https://www.vari.cz/res/archive/038/035789.jpg?seek=1634027864"></div>
+        </article>
+        <article>
+            <h2>Rozšiřujeme náš sortiment</h2>
+            <p>Nově, také brousíme a prodáváme všechny typy řetězů na motorové a elektrické pily</p>
+        </article>
+    </section>
+
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h3>Prodejna</h3>
+                    <p>Beroun, Plzeňská 228</p><br>
+                    <h4>Otevírací doba:</h4>
+                    <p><strong>po - pá</strong>   8:00 - 17:00   (polední přestávka 12:00 - 12:30)<br>
+                    <strong>so</strong>        zavřeno (otevřeno jen po předchozí telefonické domluvě) 
+                    </p>  
+                </td>
+
+                <td>
+                    <h3>Kontakty</h3>
+                    <p><Strong>Darina Nováková</Strong><br>
+                    777 706 366<br>
+                    novakova@dartek.cz</p>
+
+                    <p><strong>Zbyněk Vítek</strong><br>
+                    602 876 942<br>
+                    vitek@dartek.cz</p>
+                </td>
+            </tr>
+        </table>
+        <p class="autor">Stránku vytvořil:<a href="unknown.html"> Marek Šollar</a></p> 
+    </footer>
+</body>
+</html>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+</script>

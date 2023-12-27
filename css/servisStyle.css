@@ -1,0 +1,23 @@
+/* COLORS */
+/* Záklaní nastavení barevného schématu stránky */
+:root { 
+    --primary: #ec1b30;
+    --white: #f5f5f5; 
+    --gray: #ebebeb;
+    --black: #0e0e0e; 
+    --transparentblack: rgba(0, 0, 0, 0.5);
+}
+
+.parallax {
+    background-image: url(../images/parallax.png);
+}
+
+.LogoShowcase {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+
+    height: 7em;
+    width: auto;
+    padding-bottom: 3em;
+}

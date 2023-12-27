@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Knihovna univerzálních stylů-->
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <!--Knihovna specifických stránkových stylů-->
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/servisStyle.css">
+    <!--Importování google fontů-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Ikona webové stránky-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images\favicon.png"> 
+    <title>Servis</title>
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <img src="images\icon.png">
+            <div class="nav_prvky">
+              <a href="index.html">Úvod</a>
+              <a href="servis.html" class="active">Servis</a>
+              <a href="pujcovna.html">Půjčovna</a>
+              <a href="katalog.html">Katalog</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="parallax">
+        <header>
+            <h2>Servis Dartek</h2>
+        </header>
+    </div>
+
+    <section>
+        <article>
+            <p class="upozorneni"><strong>BROUSÍME A PRODÁVÁME VŠECHNY TYPY ŘETĚZŮ NA MOTOROVÉ A ELEKTRICKÉ PILY</strong></p><br>
+            <p>Jsme specializovaný servis Dartek, který se zaměřuje na broušení a prodej řetězů pro motorové a elektrické pily. Spolupracujeme jako <strong>autorizovaný servis</strong> s předními značkami, včetně <strong>Honda</strong>, <strong>Stihl</strong>, <strong>Vari</strong> a <strong>Stiga</strong>. Naši vyškolení technici poskytují profesionální a kvalitní <strong>servisní služby</strong>.</p>
+            <h3>Proč vybrat náš servis:</h3>
+            <ul>
+                <li><strong>Předprodejní servis:</strong> Při prodeji nového stroje pečlivě rozbalíme, doplníme provozní tekutiny a otestujeme ho. Naučíme vás také správnému používání stroje.</li>
+                <li><strong>Záruční servis:</strong> Pokud se v rámci záruční doby objeví jakékoli problémy se strojem, rychle je vyřešíme.</li>
+                <li><strong>Pozáruční servis:</strong> Poskytujeme kvalitní pozáruční servis na veškeré výrobky značek Honda, Stihl, Vari a Stiga. Nabízíme také <strong>originální náhradní díly</strong>.</li>    
+              </ul>
+              <p>Naše společnost je součástí <strong>autorizovaných servisů</strong> těchto značek, což zaručuje, že naše práce splňuje jejich standardy a zákazníci získávají profesionální péči o své stroje.</p>
+              <p>Máme dlouholeté zkušenosti v oblasti servisu motorových a elektrických pil. Naši technici jsou odborníci ve svém oboru a pečlivě se starají o každý stroj, který k nám přichází.</p>
+              <p>Pokud hledáte spolehlivý servis, který se specializuje na řetězy pro motorové a elektrické pily, obraťte se na nás. Jsme tu pro vás a rádi vám pomůžeme s jakýmkoli servisním nebo prodejním požadavkem. Kontaktujte nás ještě dnes a dejte nám příležitost ukázat vám naši kvalitu a profesionalitu.</p>
+        </article>
+
+        <div class="LogoShowcase">
+            <img src="images\logaSpolecnosti\HondaPE.png" alt="Honda">
+            <img src="images\logaSpolecnosti\Stihl.png" alt="Stihl">
+            <img src="images\logaSpolecnosti\Vari.png" alt="Vari">
+            <img src="images\logaSpolecnosti\Stiga.png" alt="Stiga">
+        </div>
+    </section>
+
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <h3>Prodejna</h3>
+                    <p>Beroun, Plzeňská 228</p><br>
+                    <h4>Otevírací doba:</h4>
+                    <p><strong>po - pá</strong>   8:00 - 17:00   (polední přestávka 12:00 - 12:30)<br>
+                    <strong>so</strong>        zavřeno (otevřeno jen po předchozí telefonické domluvě) 
+                    </p>  
+                </td>
+
+                <td>
+                    <h3>Kontakty</h3>
+                    <p><Strong>Darina Nováková</Strong><br>
+                    777 706 366<br>
+                    novakova@dartek.cz</p>
+
+                    <p><strong>Zbyněk Vítek</strong><br>
+                    602 876 942<br>
+                    vitek@dartek.cz</p>
+                </td>
+            </tr>
+        </table>
+        <p class="autor">Stránku vytvořil:<a href="unknown.html"> Marek Šollar</a></p> 
+    </footer>
+</body>
+</html>
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+</script>
