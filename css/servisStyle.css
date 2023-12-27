@@ -6,6 +6,17 @@
     --gray: #ebebeb;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --pMO: 1.2rem;
 }
 
 .parallax {
@@ -13,11 +24,22 @@
 }
 
 .LogoShowcase {
+    
     display: flex;
     justify-content: center;
     gap: 4em;
-
-    height: 7em;
-    width: auto;
+    
     padding-bottom: 3em;
+}
+
+.LogoShowcase img {
+    max-height: 7em;
+    width: auto;
+}
+
+@media screen and (max-width: 500px) {
+.LogoShowcase {
+    flex-direction: column;
+    margin: 0 1em;
+}
 }

@@ -6,6 +6,18 @@
     --gray: #ebebeb;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --h4PC: 1.5rem;
+    --pMO: 1.2rem;
 }
 
 /* BODY */
@@ -14,6 +26,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--white);
+    /*overflow-x: hidden;*/
 }
 
 html {
@@ -48,7 +61,13 @@ nav img {
     color: var(--primary);
     text-decoration: none;
     padding: 1em 1.5em 1em 1.5em;
-    font-size: 1.25rem;
+    font-size: var(--pPC);
+}
+
+@media screen and (max-width: 500px) {
+    .nav_prvky a {
+        font-size: var(--pMO);
+    }
 }
 
 .nav_prvky a.active {
@@ -121,12 +140,24 @@ footer td{
 
 footer h3{
     margin-top: 16px;
-    font-size: 22px;
+    font-size: var(--h3PC);
+}
+
+@media screen and (max-width: 500px) {
+    footer h3 {
+        font-size: var(--h3MO);
+    }
 }
 
 footer h4{
     margin: 0px;
-    font-size: 18px;
+    font-size: var(--h4PC);
+}
+
+@media screen and (max-width: 500px) {
+    footer h4 {
+        font-size: var(--h4MO);
+    }
 }
 
 .autor{
@@ -153,6 +184,8 @@ footer h4{
     /*background-image: url(../images/parallax.png);*/
     min-height: 100px;
     min-width: 100%;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
 
     background-attachment: fixed;
     background-position: center;
@@ -160,17 +193,36 @@ footer h4{
     background-size: cover;
 }
 
-header {
-    padding: 10%;
-    text-align: center;
+.parallax header {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
     color: var(--white);
     text-transform: uppercase;
     font-size: 50px;
     background-color: var(--transparentblack); /* NEMĚNIT! Transparentní černá */
 }
 
+@media screen and (max-width: 500px) {
+    .parallax header {
+        font-size: 45px;
+    }
+}
+
+.parallax h2 {
+    text-align: center;
+}
+
 .button {
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: var(--h3PC);
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        font-size: var(--h3MO);
+    }
 }
 
 .button a {
@@ -189,4 +241,10 @@ section ul {
 section li {
     font-size: 1.5rem;
     padding-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+    section li {
+        font-size: 1.3rem;
+    }
 }

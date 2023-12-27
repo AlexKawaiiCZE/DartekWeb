@@ -6,18 +6,42 @@
     --gray: #ebebeb;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --pMO: 1.2rem;
 }
 
 .parallax {
     background-image: url(../images/parallax.png);
 }
 
+/*
+section {
+    overflow-x: hidden;
+}
+*/
 
 article {
     padding: 0 5em;
     padding-bottom: 4%;
     background-color: var(--white);
+    /*overflow-x: hidden;*/
 }
+
+@media screen and (max-width: 500px) {
+    article {
+        padding: 0 1em;
+    }
+}
+
 
 article:nth-child(even) {
     background-color: var(--gray);
@@ -27,12 +51,24 @@ article h2 {
     padding-top: 1em;
     text-align: center;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: var(--h2PC);
+}
+
+@media screen and (max-width: 500px) {
+    article h2 {
+        font-size: var(--h2MO);
+    }
 }
 
 article p {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: var(--pPC);
+}
+
+@media screen and (max-width: 500px) {
+    article p {
+        font-size: var(--pMO);
+    }
 }
 
 article img {
@@ -50,13 +86,25 @@ article img {
 article h3 {
     text-align: left;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: var(--h3PC);
+}
+
+@media screen and (max-width: 500px) {
+    article h3 {
+        font-size: var(--h3MO);
+    }
 }
 
 .upozorneni {
     padding-top: 2em;
-    font-size: 1.7rem;
+    font-size: var(--pPC);
     text-align: center;
 
     color: var(--primary);
+}
+
+@media screen and (max-width: 500px) {
+    .upozorneni {
+        font-size: var(--pMO);
+    }
 }

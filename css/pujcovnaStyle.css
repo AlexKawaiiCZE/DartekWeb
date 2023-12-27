@@ -6,6 +6,17 @@
     --gray: #ebebeb;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --pMO: 1.2rem;
 }
 
 .parallax {
@@ -15,7 +26,6 @@
 section table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
     margin-bottom: 3em;
 }
   
@@ -25,15 +35,33 @@ section tr th{
     background-color: var(--primary);
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 500px) {
+    section tr th {
+        font-size: 1.3rem;
+    }
+}
   
 section tr td {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    section tr td {
+        font-size: 1rem;
+    }
 }
 
 section td, th {
     border: 1.5px solid var(--black);
     text-align: left;
     padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    section td, th {
+        padding: 4px;
+    }
 }
 
 section ul {

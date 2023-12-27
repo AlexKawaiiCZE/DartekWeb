@@ -6,6 +6,17 @@
     --gray: #ebebeb;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --pMO: 1.2rem;
 }
 
 .parallax {
@@ -25,45 +36,59 @@ iframe {
 
 section .upozorneni{
     text-align: center;
-    font-size: 25px;
+    font-size: var(--pPC);
     color: var(--primary);
     padding-top: 20px;
 }
 
-
-section header {
-    padding: 10%;
-    text-align: center;
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 50px;
-    background-color: var(--transparentblack); /* NEMĚNIT! Transparentní černá */
+@media screen and (max-width: 500px) {
+    section .upozorneni {
+        font-size: var(--pMO);
+    }
 }
 
 section article{
     padding: 16px;
     padding-bottom: 4%;
-    width: 90%  ;
+    width: 90%;
     margin: auto;
 }
 
 section article h2{
     text-align: center;
     font-weight: bold;
-    font-size: 44px;
+    font-size: var(--h2PC);
+}
+
+@media screen and (max-width: 500px) {
+    section article h2 {
+        font-size: var(--h2MO);
+    }
 }
 
 section article p{
     text-align: left;
     padding: 0px;
-    font-size: 20px;
+    font-size: var(--pPC);
+}
+
+@media screen and (max-width: 500px) {
+    section article p {
+        font-size: var(--pMO);
+    }
 }
 
 section article h3{
     padding-top: 40px;
     text-align: left;
     font-weight: bold;
-    font-size: 28px;
+    font-size: var(--h3PC);
+}
+
+@media screen and (max-width: 500px) {
+    section article h3 {
+        font-size: var(--h3MO);
+    }
 }
 
 section article ul{
@@ -75,13 +100,25 @@ section article li{
     float: left;
     padding-bottom: 15px;
     text-decoration: double;
-    font-size: 20px;
+    font-size: var(--pPC);
+}
+
+@media screen and (max-width: 500px) {
+    section article li {
+        font-size: var(--pMO);
+    }
 }
 
 .adresa {
     text-align: left;
     color: var(--primary);
-    font-size: 20px;
+    font-size: var(--pPC);
     padding: 0px;
     margin: 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .adresa {
+        font-size:  var(--pMO);
+    }
 }

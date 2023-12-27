@@ -4,15 +4,27 @@
     --primary: #ec1b30;
     --white: #f5f5f5; 
     --gray: #ebebeb;
-    --gray2: #cfcfcf;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
+   
+    --h1PC: 3rem;
+    --h2PC: 2.5rem;
+    --h3PC: 2rem;
+    --h4PC: 1.8rem;
+    --pPC: 1.5rem;
+
+    --h1MO: 2.8rem;
+    --h2MO: 2.3rem;
+    --h3MO: 1.8rem;
+    --pMO: 1.2rem;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
     padding: 3em 10em;
+
+
     gap: 1em;
 }
 
@@ -22,6 +34,12 @@ section {
     justify-content: center;
     background-color: var(--gray2);
     border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        justify-content: center;
+    }
 }
 
 .card img {
@@ -55,7 +73,13 @@ section {
     display: flex;
     justify-content: center;
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: var(--pPC);
+}
+
+@media screen and (max-width: 500px) {
+    .card .cena {
+        font-size: var(--pMO);
+    }
 }
 
 .card .nazevProduktu {
@@ -68,6 +92,12 @@ section {
     font-weight: bold;
 }
 
+@media screen and (max-width: 500px) {
+    .card .nazevProduktu {
+        font-size: 1rem;
+    }
+}
+
 .card a {
     display: flex;
     justify-content: center;
@@ -77,4 +107,10 @@ section {
     background-color: var(--primary);
     color: var(--white);
     border-radius: 0 0 15px 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .card a {
+        font-size: 1rem;
+    }
 }
