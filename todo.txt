@@ -1,4 +1,0 @@
-Telefon:
-Vytvořit a začít používat telefonní font size
-
-Overflow je nastavený v mainStyle.css a indexStyle.css
