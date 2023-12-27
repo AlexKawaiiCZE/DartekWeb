@@ -24,6 +24,9 @@
 }
 
 section table {
+    display: flex;
+    justify-content: center;
+    
     font-family: arial, sans-serif;
     border-collapse: collapse;
     margin-bottom: 3em;
