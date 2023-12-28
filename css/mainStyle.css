@@ -4,6 +4,7 @@
     --primary: #ec1b30;
     --white: #f5f5f5; 
     --gray: #ebebeb;
+    --ultraGray: #bebebe;
     --black: #0e0e0e; 
     --transparentblack: rgba(0, 0, 0, 0.5);
    
@@ -135,6 +136,7 @@ footer table {
 }
 
 footer td{
+    vertical-align: top;
     width: 50%
 }
 
@@ -247,4 +249,18 @@ section li {
     section li {
         font-size: 1.3rem;
     }
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--ultraGray);
+border-radius: 5px 0 0 5px;
 }
